@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Discover bold graphic T-shirts from RAWQ. Explore 81 designs across 7 collections and create a custom tee.">
+  <meta property="og:title" content="RAWQ — Wear Your Story">
+  <meta property="og:description" content="Bold designs. Your identity. Explore RAWQ T-shirt collections.">
+  <title>RAWQ | Wear Your Story — Custom T-Shirts</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg class="svg-filters" aria-hidden="true" width="0" height="0">
+  <filter id="rawq-gooey">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+    <feColorMatrix in="blur" mode="matrix"
+      values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="goo"/>
+    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+  </filter>
+</svg>
+
+<header class="header" id="top">
+  <a class="brand" href="#home">
+    <span class="brand-icon">R</span>
+    <span>RAWQ<small>CUSTOM T-SHIRTS</small></span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+  <nav class="nav" id="nav">
+    <span class="liquid-pill" id="liquidPill" aria-hidden="true"></span>
+    <a class="nav-link active" href="#home">Home</a>
+    <a class="nav-link" href="#shop">Collections</a>
+    <a class="nav-link" href="#customize">Customize</a>
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-cta" href="#shop">Explore Designs ↗</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <p class="eyebrow hero-eyebrow">
+        <span class="status-dot"></span> YOUR STYLE. YOUR STORY.
+      </p>
+
+      <h1>WEAR YOUR<br><span class="hero-word">STORY.</span></h1>
+
+      <p class="lead">
+        Not made to blend in. Made to say something. Explore bold graphic
+        tees across anime, cars, sport, cinema and typography — or bring
+        your own idea to life.
+      </p>
+
+      <div class="actions">
+        <a class="btn red-btn" href="#shop">Explore Collections ↘</a>
+        <a class="plain-link" href="#customize">Make it yours ↗</a>
+      </div>
+
+      <div class="hero-stats">
+        <span><b>81</b> DESIGNS</span>
+        <span><b>07</b> COLLECTIONS</span>
+        <span class="hero-stat-note">MADE TO EXPRESS</span>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-label="Animated RAWQ liquid orb">
+      <div class="orb-ring ring-a"></div>
+      <div class="orb-ring ring-b"></div>
+
+      <div class="liquid-orb">
+        <div class="orb-gloss"></div>
+        <div class="orb-text">RAWQ<small>ORIGINALS</small></div>
+      </div>
+
+      <span class="float-label label-a">DESIGN YOUR VIBE ↗</span>
+      <span class="float-label label-b">EST. FOR THE BOLD</span>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <div>CREATE ✳ CUSTOMIZE ✳ WEAR ✳ REPEAT ✳ RAWQ ✳ CREATE ✳ CUSTOMIZE ✳ WEAR ✳ REPEAT ✳ RAWQ ✳</div>
+  </div>
+
+  <div class="value-strip">
+    <span><i>✳</i> BOLD ORIGINALITY</span>
+    <span><i>↗</i> FIND YOUR COLLECTION</span>
+    <span><i>✦</i> CUSTOM IDEAS WELCOME</span>
+  </div>
+
+  <!-- COLLECTIONS -->
+  <section class="section" id="shop">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">THE RAWQ UNIVERSE / 01</p>
+        <h2>Choose your <em>world.</em></h2>
+      </div>
+      <p class="muted">
+        Seven collections. 81 designs. Find the one that feels like you —
+        then enquire to confirm sizes, colours and final pricing.
+      </p>
+    </div>
+
+    <div class="collection-topline">
+      <span>EXPLORE THE COLLECTIONS</span>
+      <span>01 — 07 <i></i></span>
+    </div>
+
+    <div class="category-grid" id="categoryGrid">
+
+      <button class="category-card" data-category="Animes">
+        <small>01 / COLLECTION</small>
+        <div class="category-art anime"><span>影</span><i>✳</i></div>
+        <div class="card-bottom">
+          <span><b>Animes</b><small>Anime-inspired artwork</small></span>
+          <i class="arrow">↗</i>
+        </div>
+      </button>
+
+      <button class="category-card" data-category="Avengers">
+        <small>02 / COLLECTION</small>
+        <div class="category-art avengers">
+          <span class="shield">A</span>
+          <label>ASSEMBLE<br>YOUR STYLE</label>
+        </div>
+        <div class="card-bottom">
+          <span><b>Avengers</b><small>Hero-inspired designs</small></span>
+          <i class="arrow">↗</i>
+        </div>
+      </button>
+
+      <button class="category-card" data-category="Cars">
+        <small>03 / COLLECTION</small>
+        <div class="category-art cars">
+          <span>NIGHT<br><em>DRIVE</em></span>
+          <i class="wheel w1"></i><i class="wheel w2"></i>
+        </div>
+        <div class="card-bottom">
+          <span><b>Cars</b><small>Automotive culture</small></span>
+          <i class="arrow">↗</i>
+        </div>
+      </button>
+
+      <button class="category-card" data-category="Cricket">
+        <small>04 / COLLECTION</small>
+        <div class="category-art cricket">
+          <span>GAME<br><em>ON.</em></span>
+          <i class="bat b1"></i><i class="bat b2"></i>
+        </div>
+        <div class="card-bottom">
+          <span><b>Cricket</b><small>Match-day energy</small></span>
+          <i class="arrow">↗</i>
+        </div>
+      </button>
+
+      <button class="category-card" data-category="Football">
+        <small>05 / COLLECTION</small>
+        <div class="category-art football">
+          <span>90′<em>MENTALITY</em></span><i>⬟</i>
+        </div>
+        <div class="card-bottom">
+          <span><b>Football</b><small>For the beautiful game</small></span>
+          <i class="arrow">↗</i>
+        </div>
+      </button>
+
+      <button class="category-card" data-category="Movies">
+        <small>06 / COLLECTION</small>
+        <div class="category-art movies">
+          <i>▶</i><span>CULT<br><em>CLASSIC</em></span>
+        </div>
+        <div class="card-bottom">
+          <span><b>Movies</b><small>Cinema on cotton</small></span>
+          <i class="arrow">↗</i>
+        </div>
+      </button>
+
+      <button class="category-card" data-category="Typography">
+        <small>07 / COLLECTION</small>
+        <div class="category-art typography">
+          <small>SAY IT</small><span>LOUD<em>.</em></span>
+          <label>WORDS WITH ATTITUDE</label>
+        </div>
+        <div class="card-bottom">
+          <span><b>Typography</b><small>Words that make a statement</small></span>
+          <i class="arrow">↗</i>
+        </div>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- PRODUCT DESIGNS -->
+  <section class="design-section" id="designs" hidden>
+    <div class="section-head design-head">
+      <div>
+        <p class="eyebrow">SELECTED COLLECTION</p>
+        <h2 id="designTitle">Designs.</h2>
+        <p id="designIntro" class="muted"></p>
+      </div>
+      <button class="btn outline-btn" id="backButton">← All Collections</button>
+    </div>
+
+    <div class="shop-tools">
+      <input id="productSearch" type="search" placeholder="Search designs..." aria-label="Search designs">
+      <span id="resultCount">81 DESIGNS</span>
+    </div>
+
+    <div class="design-grid image-product-grid" id="designGrid"></div>
+
+    <p class="fineprint">
+      Price: ₹599 per full T-shirt. Confirm size, availability and delivery charges before ordering.
+    </p>
+  </section>
+
+ <!-- PREMIUM CUSTOMIZE SECTION -->
+  <section class="rawq-custom" id="customize">
+    <div class="rawq-custom-inner">
+
+      <!-- LEFT: CUSTOM T-SHIRT HERO -->
+      <div class="rawq-custom-hero">
+        <div class="rawq-custom-label">
+          <span class="rawq-live-dot"></span>
+          RAWQ CUSTOM STUDIO / 02
+        </div>
+
+        <h2>
+          YOUR IDEA.<br>
+          YOUR <span>TEE.</span><br>
+          YOUR RULES.
+        </h2>
+
+        <p class="rawq-custom-description">
+          Your artwork. Your favourite quote. Your own concept.
+          Turn your idea into a T-shirt that feels like you.
+        </p>
+
+        <a
+          class="rawq-custom-cta"
+          href="https://wa.me/919847594021?text=Hi%20RAWQ!%20I%20want%20to%20create%20a%20custom%20T-shirt.%20Please%20share%20the%20details."
+          target="_blank"
+          rel="noopener noreferrer">
+          START YOUR DESIGN <span>↗</span>
+        </a>
+
+        <div class="rawq-custom-visual">
+          <div class="rawq-custom-orbit"></div>
+          <div class="rawq-custom-orbit rawq-custom-orbit-two"></div>
+
+          <div class="rawq-tee-art">
+            <svg viewBox="0 0 340 330" role="img"
+                 aria-label="Black RAWQ custom T-shirt illustration">
+              <defs>
+                <linearGradient id="rawqTeeShade" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#303030"/>
+                  <stop offset="55%" stop-color="#171717"/>
+                  <stop offset="100%" stop-color="#080808"/>
+                </linearGradient>
+              </defs>
+
+              <ellipse cx="170" cy="293" rx="104" ry="13"
+                       fill="#000" opacity=".55"/>
+
+              <path d="M112 43 L139 31 Q170 57 201 31 L228 43
+                       L286 83 L253 130 L224 112 L235 273
+                       Q170 290 105 273 L116 112 L87 130 L54 83 Z"
+                    fill="url(#rawqTeeShade)"
+                    stroke="#555" stroke-width="1.4"/>
+
+              <path d="M139 31 Q170 68 201 31"
+                    fill="none" stroke="#666" stroke-width="2"/>
+
+              <path d="M116 112 L108 268 M224 112 L232 268"
+                    fill="none" stroke="#555" stroke-width="1"/>
+
+              <text x="170" y="143" fill="#D92828"
+                    font-size="14" font-family="Arial,sans-serif"
+                    font-weight="800" letter-spacing="5"
+                    text-anchor="middle">YOUR</text>
+
+              <text x="170" y="178" fill="#fff"
+                    font-size="32" font-family="Arial,sans-serif"
+                    font-weight="900" text-anchor="middle">IDEA.</text>
+
+              <path d="M129 191 L211 191"
+                    stroke="#D92828" stroke-width="3"/>
+
+              <text x="170" y="211" fill="#bbb"
+                    font-size="8" font-family="Arial,sans-serif"
+                    letter-spacing="3" text-anchor="middle">
+                MADE PERSONAL
+              </text>
+            </svg>
+          </div>
+
+          <div class="rawq-custom-sticker">
+            <span>R</span>
+            <small>MADE<br>YOUR WAY</small>
+          </div>
+
+          <div class="rawq-custom-vertical">
+            CREATE / CUSTOMIZE / WEAR
+          </div>
+        </div>
+
+        <p class="rawq-custom-note">
+          <span>✳</span> YOUR IDEA, OUR PRINT
+        </p>
+      </div>
+
+      <!-- RIGHT: THREE STEPS -->
+      <div class="rawq-custom-process">
+        <div class="rawq-custom-process-heading">
+          <p class="rawq-custom-eyebrow">HOW IT WORKS / 01—03</p>
+          <h3>MAKE IT <span>YOURS.</span></h3>
+          <p>Three simple steps. One design that tells your story.</p>
+        </div>
+
+        <article class="rawq-custom-step">
+          <span class="rawq-step-number">01</span>
+          <div class="rawq-step-symbol">✳</div>
+          <div class="rawq-step-copy">
+            <h4>CHOOSE YOUR BASE</h4>
+            <p>Choose your T-shirt colour and fit to get started.</p>
+          </div>
+          <span class="rawq-step-arrow">↗</span>
+        </article>
+
+        <article class="rawq-custom-step">
+          <span class="rawq-step-number">02</span>
+          <div class="rawq-step-symbol">＋</div>
+          <div class="rawq-step-copy">
+            <h4>SHARE YOUR IDEA</h4>
+            <p>Send your artwork, name, quote or concept to RAWQ.</p>
+          </div>
+          <span class="rawq-step-arrow">↗</span>
+        </article>
+
+        <article class="rawq-custom-step">
+          <span class="rawq-step-number">03</span>
+          <div class="rawq-step-symbol">✓</div>
+          <div class="rawq-step-copy">
+            <h4>APPROVE &amp; WEAR</h4>
+            <p>Confirm the design and order details before printing.</p>
+          </div>
+          <span class="rawq-step-arrow">↗</span>
+        </article>
+
+        <div class="rawq-custom-bottom">
+          <span>GOT AN IDEA?</span>
+          <a
+            href="https://wa.me/919847594021?text=Hi%20RAWQ!%20I%20have%20an%20idea%20for%20a%20custom%20T-shirt."
+            target="_blank"
+            rel="noopener noreferrer">
+            LET'S TALK ON WHATSAPP <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <p class="eyebrow">A LITTLE ABOUT US / 03</p>
+    <h2>Not just a tee.<br><em>An identity.</em></h2>
+    <p class="muted about-copy">
+      RAWQ is about wearing what you love. From anime and automotive culture
+      to sport, cinema and bold typography, find a design that says something about you.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section rawq-faq" id="faq">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">NEED TO KNOW? / 04</p>
+        <h2>FREQUENTLY ASKED <em>QUESTIONS.</em></h2>
+      </div>
+      <p class="muted">Quick answers before you order your RAWQ T-shirt.</p>
+    </div>
+
+    <div class="rawq-faq-list">
+      <details>
+        <summary>What is the price of a T-shirt?<span>+</span></summary>
+        <p>The listed price is ₹599 per full T-shirt. Please confirm availability and delivery charges before ordering.</p>
+      </details>
+
+      <details>
+        <summary>What sizes are available?<span>+</span></summary>
+        <p>The order form offers S, M, L, XL and XXL. Please confirm your preferred size is available.</p>
+      </details>
+
+      <details>
+        <summary>How can I place an order?<span>+</span></summary>
+        <p>Choose a collection and design, select your size and quantity, and use the WhatsApp order button to send your enquiry.</p>
+      </details>
+
+      <details>
+        <summary>How can I pay?<span>+</span></summary>
+        <p>Contact RAWQ to confirm the available payment methods before making a payment.</p>
+      </details>
+
+      <details>
+        <summary>How long does delivery take?<span>+</span></summary>
+        <p>Delivery time depends on your location and product availability. Please confirm the estimated delivery date and shipping charges before ordering.</p>
+      </details>
+
+      <details>
+        <summary>Can I request a custom design?<span>+</span></summary>
+        <p>Yes. Use the Customize section to enquire about printing your own artwork, name, quote or concept.</p>
+      </details>
+
+      <details>
+        <summary>How can I contact RAWQ?<span>+</span></summary>
+        <p>Email <a href="mailto:rawqwears@gmail.com">rawqwears@gmail.com</a> or <a href="https://wa.me/919847594021" target="_blank" rel="noopener">message us on WhatsApp</a>.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<!-- PREMIUM FOOTER -->
+<footer class="rawq-footer" id="contact">
+  <div class="rawq-footer-main">
+
+    <div class="rawq-footer-brand">
+      <a class="brand" href="#top">
+        <span class="brand-icon">R</span>
+        <span>RAWQ<small>CUSTOM T-SHIRTS</small></span>
+      </a>
+      <p>Wear what you love.<br>Own your identity.</p>
+      <a class="rawq-footer-contact" href="mailto:rawqwears@gmail.com">rawqwears@gmail.com ↗</a>
+    </div>
+
+    <div class="rawq-footer-links">
+      <h3>EXPLORE</h3>
+      <a href="#home">Home</a>
+      <a href="#shop">Collections</a>
+      <a href="#customize">Customize</a>
+      <a href="#about">About RAWQ</a>
+      <a href="#faq">FAQs</a>
+    </div>
+
+    <div class="rawq-footer-links">
+      <h3>NEED HELP?</h3>
+      <a href="#faq">Size &amp; Fit</a>
+      <a href="#faq">Orders &amp; Delivery</a>
+      <a href="https://wa.me/919847594021" target="_blank" rel="noopener">WhatsApp Support ↗</a>
+      <a href="mailto:rawqwears@gmail.com">Email Us ↗</a>
+    </div>
+
+    <div class="rawq-footer-note">
+      <span class="rawq-footer-tag">RAWQ / ORIGINALS</span>
+      <h3>YOUR STYLE.<br><em>YOUR STORY.</em></h3>
+      <a class="btn red-btn" href="#shop">FIND YOUR TEE ↗</a>
+    </div>
+
+  </div>
+
+  <div class="rawq-footer-bottom">
+    <span>© <span id="year"></span> RAWQ. ALL RIGHTS RESERVED.</span>
+    <span>CREATE. CUSTOMIZE. WEAR.</span>
+    <a href="#top">BACK TO TOP ↑</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
